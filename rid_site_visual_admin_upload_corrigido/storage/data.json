@@ -1,0 +1,107 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Administrador RID",
+            "email": "admin@rid.com",
+            "password": "$2y$12$FNqim\/5CTmcGocBWK1.7FuatNRWR\/n0iF99\/KQS4YjnHdaqnCMLl.",
+            "role": "admin",
+            "phone": "(11) 90000-0000",
+            "city": "Suzano - SP",
+            "bio": "Administrador inicial do sistema RID.",
+            "avatar": null,
+            "created_at": "2026-03-29"
+        },
+        {
+            "id": 2,
+            "name": "Carlos Mecânico",
+            "email": "mecanico@rid.com",
+            "password": "$2y$12$heTIw7Vp8Pq\/odpc1a6q9e.UrT42ZmilaOFDa6z1k65oBBMkjDq4S",
+            "role": "mecanico",
+            "phone": "(11) 91111-1111",
+            "city": "Poá - SP",
+            "bio": "Profissional de manutenção veicular cadastrado na RID.",
+            "avatar": null,
+            "created_at": "2026-03-29"
+        },
+        {
+            "id": 3,
+            "name": "João Cliente",
+            "email": "cliente@rid.com",
+            "password": "$2y$12$goh5FDWbhqje1CJgX33cW.SCLx70Il12udDyoPldc\/RZeGRcGfmi.",
+            "role": "cliente",
+            "phone": "(11) 92222-2222",
+            "city": "Suzano - SP",
+            "bio": "Cliente inicial para demonstração do sistema RID.",
+            "avatar": null,
+            "created_at": "2026-03-29"
+        }
+    ],
+    "vehicles": [
+        {
+            "id": 1,
+            "user_id": 3,
+            "plate": "ABC1D23",
+            "brand": "Ford",
+            "model": "Courier",
+            "year": 2008,
+            "color": "Prata",
+            "notes": "Veículo de exemplo para a RID",
+            "created_at": "2026-03-29"
+        }
+    ],
+    "service_categories": [
+        {
+            "id": 1,
+            "name": "Troca de óleo"
+        },
+        {
+            "id": 2,
+            "name": "Freios"
+        },
+        {
+            "id": 3,
+            "name": "Suspensão"
+        },
+        {
+            "id": 4,
+            "name": "Elétrica"
+        },
+        {
+            "id": 5,
+            "name": "Motor"
+        },
+        {
+            "id": 6,
+            "name": "Diagnóstico"
+        },
+        {
+            "id": 7,
+            "name": "Lavagem técnica"
+        }
+    ],
+    "services": [
+        {
+            "id": 1,
+            "vehicle_id": 1,
+            "category_id": 1,
+            "mechanic_id": 2,
+            "title": "Troca de óleo e filtro",
+            "description": "Serviço executado com troca do óleo lubrificante e do filtro, com conferência visual de vazamentos.",
+            "service_date": "2026-03-29",
+            "status": "concluido",
+            "parts_used": "Óleo 5W30, filtro de óleo",
+            "cost": 180,
+            "created_at": "2026-03-29"
+        }
+    ],
+    "service_participants": [
+        {
+            "id": 1,
+            "service_id": 1,
+            "mechanic_name": "Carlos Mecânico",
+            "role_in_service": "Responsável principal"
+        }
+    ],
+    "service_photos": []
+}
